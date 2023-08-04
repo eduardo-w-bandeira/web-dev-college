@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <label for="username">Username: </label>
+      <input id="username" maxlength="5" name="username" type="text" required />
+
+      <br />
+
+      <label for="password">Password: </label>
+      <input id="password" name="password" type="password" required />
+
+      <br />
+
+      <label for="email">Email: </label>
+      <input id="email" name="email" type="email" required />
+
+      <br />
+
+      <label for="subcribe">Subcribe our website? </label>
+      <input id="subcribe" name="subcribe" type="checkbox" />
+
+      <br />
+
+      <label for="age">Age:</label>
+      <input id="age" name="age" type="number" min="1" max="120" step="10" />
+
+      <br />
+
+      <label for="password">Education: </label>
+      <input
+        id="education"
+        value="Completed high school"
+        name="education"
+        type="text"
+      />
+
+      <br />
+
+      <label for="nationality">Nationality:</label>
+      <input name="nationality" value="domestic" type="radio" checked />Domestic
+      <input
+        name="nationality"
+        value="international"
+        type="radio"
+      />International
+
+      <br />
+
+      <label for="location">Where to live:</label>
+      <select id="location" name="location">
+        <option value="bc">BC</option>
+        <option value="ab">AB</option>
+        <option value="on">ON</option>
+      </select>
+
+      <br>
+
+      <label for="vehicle">Vehicle:</label>
+      <input name="vehicle" list="vehicle-data" type="txt" />
+      <datalist id="vehicle-data">
+        <option value="honda">Honda</option>
+        <option value="huyndai">Huyndai</option>
+        <option value="ford">Ford</option>
+      </datalist>
+
+      <br>
+
+      <label for="countrycode">Country code: </label>
+      <input
+        id="countrycode"
+        placeholder="Input 3 characters"
+        maxlength="3"
+        pattern="[A-Za-z]{3}"
+        name="countrycode"
+        type="text"
+      />
+
+      <br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
