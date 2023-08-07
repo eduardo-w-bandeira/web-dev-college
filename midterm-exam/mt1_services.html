@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--  
+    Author: 
+    Date:   
+	-->
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="mt1_base.css" />
+  <link rel="stylesheet" href="mt1_layout.css" />
+  <title>David Tree Care Services</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="mt1_index.html">Home</a></li>
+        <li><a href="mt1_services.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>David Tree Care Services</h1>
+  <img src="mt1_photo2.jpg" alt="">
+  <h2>Tree Removal</h2>
+  <p>Our team specializes in expert tree removal using proven techniques and state-of-the-art equipment,
+    ensuring the safety of your lawn, home, and garden from any potential damage.
+    With 20 years of experience in the field, we bring unparalleled expertise to every project.</p>
+  <h2>Pruning</h2>
+  <p>Maintain the beauty and health of your trees and shrubs through regular
+    pruning services. Our experts skillfully remove dead and diseased branches
+    caused by various conditions like diseases and infestations, enhancing the
+    overall appearance and vitality of your greenery.</p>
+  <h2>Storm Damage</h2>
+  <p>When unexpected storms strike, we understand the urgency of addressing storm damage.
+    Contact us after the storm has passed, and we'll promptly provide an estimate
+    and assist you with your insurance claim. As fully licensed professionals, we act swiftly to clear debris,
+    mitigating existing hazards before undertaking complete takedowns and necessary repairs.</p>
+
+  <h2>Survey Questions</h2>
+  <form action="submit-survey.php" method="POST">
+    <ol>
+      <li>How satisfied were you with our services?</li>
+      <ol type="a">
+        <li>
+          <input type="radio" id="q1a" name="q1" value="a">
+          <label for="q1a">Very satisfied</label>
+        </li>
+        <li>
+          <input type="radio" id="q1b" name="q1" value="b">
+          <label for="q1b">Satisfied</label>
+        </li>
+        <li>
+          <input type="radio" id="q1c" name="q1" value="c">
+          <label for="q1c">Dissatisfied</label>
+        </li>
+        <li>
+          <input type="radio" id="q1d" name="q1" value="d">
+          <label for="q1d">Very dissatisfied</label>
+        </li>
+      </ol>
+      <li>How likely are you to continue using our service?</li>
+      <div id="newRow">
+        <label>Very unlikely</label>
+        <input type="range" id="q2range" min="1" max="10" step="1" value="5" name="q2">
+        <label>Very likely</label>
+      </div>
+      <li>
+        <label for="q3text">Provide any suggestions for us:</label>
+      </li>
+      <textarea id="q3text" rows="4" cols="50" placeholder="Enter your suggestions here"></textarea>
+    </ol>
+    <input type="submit" value="Send" id="btnSend"> 
+  </form>
+  <br>
+  <footer>&#9830; 201 Queens Ave &#9830; New Westminster, BC V3L 5L1</footer>
+</body>
+
+</html>
+
+
+<!-- 
+
+    <ol>
+      <li>How satisfied were you with our services?</li>
+      Very Satisfied
+      Satisfied
+      Dissatisfied
+      Very Dissatisfied
+      <li>How likely are you to continue using our services?</li>
+      Very unlikely
+      Very likely
+    </ol> -->
