@@ -4,11 +4,104 @@
    Mobile Styles: 0px to 640px 
    ===============================
 */
+@media screen and (max-width: 640px) {
+
+   table,
+   tbody,
+   tr,
+   td,
+   th,
+   caption {
+      display: block;
+   }
+
+   table#calendar thead, h1 {
+      display: none;
+   }
+
+   table#calendar thead h1 {
+      display: none;
+   }
 
 
+   table#calendar caption {
+      background-color: #888;
+      color: white;
+      font-size: 1.5em;
+      line-height: 2em;
+   }
 
+
+   table#calendar td {
+      border: 1px dotted gray;
+      color: rgb(11, 12, 145);
+      position: relative;
+      padding-left: 40%;
+      min-height: 40px;
+   }
+
+   table#calendar tr:nth-of-type(odd) {
+      background-color: rgb(255, 235, 178);
+      border: 2px solid gray;
+   }
+
+   table#calendar td::before {
+      content: attr(data-date);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      padding: 5px;
+   }
+
+}
 
 /* =============================================
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
+
+@media screen and (min-width: 641px) {
+
+   table#calendar {
+      background-image: url('lht_photo1.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 40%;
+      border: 6px double rgb(154, 64, 3);
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 85%;
+      table-layout: fixed;
+   }
+
+   table#calendar th,
+   td {
+      border: 1px solid gray;
+      font-size: 0.85em;
+      font-weight: normal;
+      padding: 5px;
+      vertical-align: top;
+      width: 14.28%;
+      word-wrap: break-word;
+   }
+
+   table#calendar td {
+      background-color: rgba(171, 171, 171, 0.6);
+      color: rgb(11, 12, 145);
+   }
+
+   table#calendar caption {
+      position: top;
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 1.2em;
+      letter-spacing: 3px;
+   }
+
+   table#calendar thead th {
+      background-color: rgb(154, 64, 3);
+      color: white;
+   }
+
+}
