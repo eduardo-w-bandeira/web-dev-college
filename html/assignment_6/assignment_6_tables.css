@@ -19,10 +19,6 @@
       display: none;
    }
 
-   table#calendar thead h1 {
-      display: none;
-   }
-
 
    table#calendar caption {
       background-color: #888;
