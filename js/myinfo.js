@@ -1,4 +1,5 @@
-console.log('Eduardo W. O. Bandeira de Melo')
-console.log('From Brazil')
-console.log('')
-console.log("PS: No, I can't dance samba, and I don't like carnival.")
+// let num = 10
+// console.log(++num)
+// console.log(num)
+
+console.log((5 > 3 && 2 < 4))
