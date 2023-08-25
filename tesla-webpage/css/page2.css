@@ -5,14 +5,14 @@ header {
     padding: 1rem;
 }
 
-/* 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            overflow: auto;
-            max-height: 80vh;
-        } */
+
+/* .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow: auto;
+    max-height: 80vh;
+} */
 
 .year {
     font-weight: bold;

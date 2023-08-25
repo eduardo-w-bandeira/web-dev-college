@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Noto Sans", sans-serif;
+}
+
+nav .logo {
+  width: 80px;
+}
+
+/* theme */
+
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+}
+
+:root {
+  --tesla-color: #ad0000;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--tesla-color);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+.btn {
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-width: thin;
+  color: var(--black);
+  background-color: var(--white);
+}
