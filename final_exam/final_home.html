@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    Author: Eduardo Willians Oliveira Bandeira de Melo
+    Date: 2023-08-25
+   -->
+  <meta charset="utf-8" />
+  <title>Celestial Disk</title>
+  <link rel="stylesheet" href="final_base.css">
+  <link rel="stylesheet" href="final_layout.css">
+  <script src="final_mapper.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="horizontal">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Astronomers</a></li>
+        <li><a href="#">Moons</a></li>
+        <li><a href="#">Planets</a></li>
+        <li><a href="#">Stars</a></li>
+        <li><a href="#">Physics</a></li>
+      </ul>
+    </nav>
+    <img src="./images/final_logo.png" alt="SkyWeb" />
+  </header>
+  <section id="left">
+    <article>
+      <h1>The Celestial Disk</h1>
+      <p>
+        A <strong>celestial disk</strong> serves as a practical tool for
+        astronomers and stargazers alike. It comprises a pair of disks: The
+        first disk showcases an array of discernible constellations within the
+        nighttime expanse, while the second overlay houses a window that
+        precisely designates the currently observable sky sector. This
+        secondary disk is then turned to align with the exact date and time in
+        question. Various sizes and types of celestial disks are available.
+        The key consideration is ensuring a celestial disk that corresponds to
+        the longitude of your stargazing location.
+      </p>
+      <p>
+        Displayed on the right is an internet-based celestial disk. This
+        rendition involves the superimposition of two images. The uppermost
+        image represents the observing window of the celestial disk, while the
+        underlying image depicts the celestial map. This celestial disk is
+        automated, effortlessly adjusting to display the present date, time,
+        and discernible constellations for individuals located at a longitude
+        of 40<sup>&deg;</sup> North. To employ a celestial disk, hold it
+        directly above with the arrow oriented northward, as indicated on the
+        observing disk.
+      </p>
+      <p>
+        Map Number: <input id="mapNum" type="number" maxlength="2" />
+        <input id="viewBtn" type="button" value="View" />
+      </p>
+    </article>
+  </section>
+  <section id="right">
+    <div id="mapContainer">
+      <img id="mask" src="./images/final_mask.png" alt="" style="z-index: 99" />
+      <div id="timeStamp">March 1, 2018 4:53 PM</div>
+    </div>
+  </section>
+  <footer>
+    Star Dust Stories &copy; 2023 English (US)
+    <span><a href="#">About</a> <a href="#">Developers</a>
+      <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Help</a></span>
+  </footer>
+</body>
+
+</html>

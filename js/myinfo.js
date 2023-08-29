@@ -1,5 +1,6 @@
-// let num = 10
-// console.log(++num)
-// console.log(num)
+let total = 0;
+for (let i = 0; i < 3; i++) {
+    total += i;
+}
 
-console.log((5 > 3 && 2 < 4))
+console.log(total)
